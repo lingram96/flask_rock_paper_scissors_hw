@@ -5,15 +5,15 @@ from models.game import Game
 
 @app.route('/rps')
 def index():
-    return render_template('home.html', title = "Rock Paper Scissors")
+    return render_template('home.html', title = "Home -")
 
 @app.route('/rps/rules')
 def rules():
-    return render_template('rules.html', title = "Game Rules")
+    return render_template('rules.html', title = "Rules -")
 
 @app.route('/rps/game')
 def game():
-    return render_template('result.html', title = "Play the game")
+    return render_template('result.html', title = "Play!")
 
 @app.route('/rps/game/<choice_1>/<choice_2>')
 def play_the_game(choice_1, choice_2):

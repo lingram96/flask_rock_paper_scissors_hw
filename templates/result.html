@@ -11,8 +11,8 @@
             <img src="/static/papervrock.gif" alt="Paper beats rock">
         </div>
         {% elif game_winner == "Player 2 wins by playing paper" %}
-        <div id="papervrock">
-            <img src="/static/papervrock.gif" alt="Paper beats rock">
+        <div id="rock">
+            <img src="/static/rock.jpeg" alt="Paper beats rock">
         </div>
         {% elif game_winner == "Player 1 wins by playing rock" %}
         <div id="therock">
@@ -31,7 +31,7 @@
         </div>
         {% elif game_winner == "It's a Draw. Play again!" %}
         <div id="draw">
-            <img src="/static/montypythondraw.gif" alt="scissors win">
+            <img src="/static/montypythondraw.gif" alt="draw">
         </div>
         {% endif %}
 {% endblock %}

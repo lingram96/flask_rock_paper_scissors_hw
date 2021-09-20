@@ -1,4 +1,4 @@
-#head{
+/* #head{
     background-color:#556;
     background-image: linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
     linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
@@ -10,9 +10,23 @@
     background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
     padding: 15px;
     margin: -10px;
+} */
+
+#head{
+    background:
+    linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-color: #131313;
+    background-size: 20px 20px;
+    padding: 15px;
+    margin: -10px;
 }
 
-body{
+/* body{
     background:
     linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
     linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
@@ -24,6 +38,36 @@ body{
     background-size: 20px 20px;
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+} */
+
+body{
+    background-color: #e0dfd9;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+    color: #495867;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+#welcome {
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#rule {
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+  
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
 }
 
 ul > li {
@@ -40,7 +84,7 @@ ul > li > a{
     padding: 80px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 125%;
-    margin-left: 12px;
+    margin-left: 8px;
 }
 
 #head > ul > li > a:hover{
@@ -52,7 +96,7 @@ ul > li > a{
 
 #welcome > h1{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: white;
+    color: #495867;
     text-align: center;
 }
 
@@ -69,7 +113,7 @@ ul > li > a{
     margin: 4px;      
     -webkit-transition-duration: 0.5s;    
     transition-duration: 0.5s;      
-    cursor:grabbing;
+    cursor: grabbing;
     text-decoration: none;      
 
 } 
@@ -82,15 +126,15 @@ ul > li > a{
 
 #welcome > h2 >a{
     text-align: center;
-    color: orange;
+    color: white;
     text-decoration: none;
-    background-color:mintcream;
+    background-color: #5CC8FF;
     font-weight: lighter;
     font-style: italic;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     border-radius: 15px;
     border-style: solid;
-    border-color: white;
+    border-color: steelblue;
     padding: 5px 5px 5px 10px;
     width: 45%;
     margin-left: 30%;
@@ -98,7 +142,7 @@ ul > li > a{
 
 #about{
     text-align: center;
-    color: white;
+    color: #495867;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
@@ -121,7 +165,7 @@ ul > li > a{
 
 }
 
-#rules1 > ul > li{
+#rule1 > ul > li{
     text-align: center;
     list-style: none;
     display: block;
@@ -130,11 +174,11 @@ ul > li > a{
     margin-bottom: 25px;
 }
 
-#rules > h3{
+#rule > h3{
     text-align: center;
 }
 
-#rules > p{
+#rule > p{
     text-align: center;
     padding-bottom: 15px;
 }
@@ -144,7 +188,7 @@ ul > li > a{
     padding-bottom: 5px;
 }
 
-#rules > ul > li{
+#rule > ul > li{
     text-align: center;
 }
 
@@ -167,7 +211,21 @@ h3{
 #result{
     text-align: center;
     padding: 25px;
+    margin-left: 500px;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    animation:example 2s linear 0s ;
 }
+
+@keyframes example {
+    from {
+      width: 0;
+    }
+    to {
+      width: 150px;
+    }
+  }
 
 #winner > p{
     text-align: center;
@@ -181,6 +239,12 @@ h3{
 }
 
 #therock{
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-bottom: 25px;
+}
+
+#rock{
     margin-left: 25%;
     margin-right: 25%;
     padding-bottom: 25px;
