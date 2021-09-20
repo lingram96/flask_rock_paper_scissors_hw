@@ -1,0 +1,23 @@
+<html>
+    <link rel="stylesheet" href="/static/style.css">
+
+    <head>
+        <title>{{ title }} - Rock Paper Scissors Game! </title>
+    </head>
+    <body>
+        <div id="head">
+        <ul>
+            <li><a id="home" href="/rps">home</a></li>
+            <li><a id="game" href="/rps/game"><button class="btn">play game</button></a></li>
+            <li><a id="rules" href="/rps/rules">rules</a></li>
+        </ul>
+        </div>
+        <hr>
+        {% block content %}
+        {% endblock %}
+        <div>
+            <footer id="footer-container">
+            </footer>
+        </div>
+    </body>
+</html>

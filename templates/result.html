@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content %}
+<link rel="stylesheet" href="/static/style.css">
+        <h1 id="result">1, 2, 3.. GO!</h1>
+        <div id="winner"> 
+            <p><b>{{ game_winner }}</b></p>            
+        </div>
+
+        {% if game_winner == "Player 1 wins by playing paper" %}
+        <div id="papervrock">
+            <img src="/static/papervrock.gif" alt="Paper beats rock">
+        </div>
+        {% elif game_winner == "Player 2 wins by playing paper" %}
+        <div id="papervrock">
+            <img src="/static/papervrock.gif" alt="Paper beats rock">
+        </div>
+        {% elif game_winner == "Player 1 wins by playing rock" %}
+        <div id="therock">
+            <img src="/static/therock.gif" alt="rock beats scissors">
+        {% elif game_winner == "Player 2 wins by playing rock" %}
+        <div id="therock">
+            <img src="/static/therock.gif" alt="rock beats scissors">
+        </div>
+        {% elif game_winner == "Player 1 wins by playing scissors" %}
+        <div id="scissors">
+                <img src="/static/edward.gif" alt="scissors win">
+        </div>
+        {% elif game_winner == "Player 2 wins by playing scissors" %}
+        <div id="scissors">
+            <img src="/static/edward.gif" alt="scissors win">
+        </div>
+        {% elif game_winner == "It's a Draw. Play again!" %}
+        <div id="draw">
+            <img src="/static/montypythondraw.gif" alt="scissors win">
+        </div>
+        {% endif %}
+{% endblock %}

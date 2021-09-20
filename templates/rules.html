@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<link rel="stylesheet" href="/static/style.css">
+        <h1>Rules for Rock, Paper, Scissors</h1>
+    <div id="rules">
+            <h3> These are the rules: </h3>
+            <p>Count to 3, then display your hand in one of the following shapes:</p>
+            <div id="choices">
+                <img src="/static/rock-paper-scissors.gif" alt="how to play">
+            </div>
+        <div id="rules1">
+            <ul> 
+                <li>Rock beats Scissors, but loses to Paper</li>
+                <li>Scissors beat Paper, but loses to Rock</li>
+                <li>Paper beats Rock, but loses to Scissors</li>
+            </ul>
+    </div>
+{% endblock %}
